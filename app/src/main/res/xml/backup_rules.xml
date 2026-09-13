@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Regras de backup automático para Android 11 e anteriores (ignorado no 12+,
+     que usa data_extraction_rules.xml). As fotos ficam de fora do backup na
+     nuvem por causa do limite de 25 MB. -->
+<full-backup-content>
+    <exclude domain="file" path="fotos/" />
+</full-backup-content>

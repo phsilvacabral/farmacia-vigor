@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <!-- Backup automático na conta Google do tablet (limite de 25 MB): guarda o
+         banco e as preferências, mas NÃO as fotos das caixas, que podem crescer
+         além do limite. As fotos ficam no backup manual (.zip) dos Ajustes. -->
+    <cloud-backup>
+        <exclude domain="file" path="fotos/" />
+    </cloud-backup>
+    <!-- Transferência direta entre aparelhos (cabo/Wi-Fi ao configurar tablet novo)
+         não tem limite de tamanho, então leva tudo, inclusive as fotos. -->
+    <device-transfer />
+</data-extraction-rules>
